@@ -38,7 +38,7 @@ $y' = -x \sin\theta + y \cos\theta$
 The absolute responses from these orientation-selective filters are aggregated using a maximum-activation strategy, yielding a **Bottom-Up Saliency Map** ($S$) that highlights structurally complex regions.
 
 <div align="center">
-  <img src="docs/v1_saliency.png" alt="V1 Saliency Map" width="500"/>
+  <img width="200" height="230" alt="image" src="https://github.com/user-attachments/assets/ff4b74f1-934a-4670-923d-5e90cec5183a" />
   <p><i>Aggregated V1 Biological Saliency Map highlighting structural contrasts.</i></p>
 </div>
 
