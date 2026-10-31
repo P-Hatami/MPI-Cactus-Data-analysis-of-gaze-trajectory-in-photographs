@@ -18,7 +18,7 @@ $$ Y(x,y) = 0.2126 \cdot R(x,y) + 0.7152 \cdot G(x,y) + 0.0722 \cdot B(x,y) $$
 
 <div align="center">
   <!-- TODO: Upload your generated images to a 'docs' folder and replace these links -->
-  <img width="97" height="81" alt="image" src="https://github.com/user-attachments/assets/970df8cb-6031-420b-bc81-19237b59ac74" />
+  <img width="200" height="230" alt="image" src="https://github.com/user-attachments/assets/970df8cb-6031-420b-bc81-19237b59ac74" />
   <p><i>Left: Original RGB Scene | Right: Physical Luminance Map</i></p>
 </div>
 
