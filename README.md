@@ -59,7 +59,7 @@ $$ P(x_{t+1} | x_t) = \frac{1}{Z} \cdot S(x_{t+1}) \cdot \exp\left(-\frac{||x_{t
 By sampling from this dynamically updated probability distribution, the system mathematically synthesizes a realistic visual scanpath.
 
 <div align="center">
-  <img src="docs/final_trajectory.png" alt="Simulated Gaze Trajectory" width="700"/>
+  <img width="200" height="230" alt="image" src="https://github.com/user-attachments/assets/84a459cb-6ee2-4eea-a2c5-1c62466caac6" />
   <p><i>Simulated Scanpath: Red dots indicate fixations, cyan lines represent saccades.</i></p>
 </div>
 
