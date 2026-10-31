@@ -16,3 +16,13 @@ Once the physical luminance is extracted, the pipeline simulates the low-level p
 In neurobiology, V1 simple cells function as directional edge detectors. To mathematically replicate this mechanism, the system applies a bank of **Gabor Filters** across multiple orientations (e.g., 0°, 45°, 90°, 135°). The absolute responses from these orientation-selective filters are aggregated using a maximum-activation strategy. 
 
 The resulting **Bottom-Up Saliency Map** highlights regions with high spatial contrast and structural complexity. These regions represent the visual stimuli that naturally attract human saccades before any top-down cognitive tasks (like object recognition) are engaged.
+
+
+## 3. Stochastic Gaze Simulation (Markov Process)
+Finding salient regions is only half the problem; simulating how the human eye traverses these regions requires modeling behavioral dynamics. The human gaze alternates between **Fixations** (focusing on a point to extract detailed information) and **Saccades** (rapid ballistic movements between fixation points).
+
+This module models the gaze trajectory as a biased **Stochastic Process (Markov Chain)**. The probability $P(x_{t+1} | x_t)$ of the eye jumping to a new pixel $x_{t+1}$ given the current position $x_t$ is determined by a transition matrix. This matrix is the element-wise product of two factors:
+1. **Biological Saliency ($S$):** Higher V1 activation increases the attraction probability.
+2. **Spatial Proximity ($G$):** A 2D Gaussian kernel centered at $x_t$ penalizes long-distance saccades, replicating the brain's energy-conservation mechanism.
+
+By sampling from this dynamically updated probability distribution, the system mathematically synthesizes a realistic visual scanpath directly on the image.
